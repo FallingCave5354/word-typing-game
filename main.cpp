@@ -2,7 +2,6 @@
 #include <string.h>
 #include <ctime>
 #include <windows.h>
-#include <cmath>
 #include <iomanip>
 
 using namespace std;
