@@ -1,6 +1,6 @@
-Developed by: <details>Renz Andrei G. Comintan</details><br>
-$~~~~~~~~~~~~~~~~~~~~~~~~~$ <details>Rayven D. Enriquez</details><br>
-Submitted to: <details>Daniel Villanueva</details>
+Developed by: <summary>Renz Andrei G. Comintan</summary><br>
+$~~~~~~~~~~~~~~~~~~~~~~~~~$ <summary>Rayven D. Enriquez</summary><br>
+Submitted to: <summary>Daniel Villanueva</summary>
 
 # C++ Word Typing Game
 A console-based application designed to help users improve their typing capabilities, speed, and accuracy. The game challenges players to type randomly generated words from a dictionary of nearly 3,000 words.
