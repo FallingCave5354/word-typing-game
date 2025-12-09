@@ -1,5 +1,5 @@
-Developed by: Renz Andrei G. Comintan
-			  Rayven D. Enriquez
+Developed by: Renz Andrei G. Comintan<br>
+			  Rayven D. Enriquez<br>
 Submitted to: Daniel Villanueva
 
 # C++ Word Typing Game
@@ -35,17 +35,17 @@ A console-based application designed to help users improve their typing capabili
 # Difficulty Levels
 The difficulty setting determines the duration of the session (how many words you must type).
 
-# Input    Mode Name         Word Count
- [1]   Beginner		    10 words 
- [2]   Easy		    20 words 
- [3]   Normal		    40 words 
- [4]   Intermediate	    60 words 
- [5]   Challenging	    80 words 
- [6]   Hard		    100 words 
- [7]   Expert		    120 words 
- [8]   Extreme		    160 words 
- [9]   Insane		    200 words 
-[10]   Custom Mode	  User Defined
+# Input    Mode Name         Word Count<br>
+ [1]   Beginner		    10 words <br>
+ [2]   Easy		    20 words <br>
+ [3]   Normal		    40 words <br>
+ [4]   Intermediate	    60 words <br>
+ [5]   Challenging	    80 words <br>
+ [6]   Hard		    100 words <br>
+ [7]   Expert		    120 words <br>
+ [8]   Extreme		    160 words <br>
+ [9]   Insane		    200 words <br>
+[10]   Custom Mode	  User Defined<br>
 
 
 
