@@ -1,11 +1,11 @@
 Developed by: Renz Andrei G. Comintan
-	      Rayven D. Enriquez
+			  Rayven D. Enriquez
 Submitted to: Daniel Villanueva
 
-#C++ Word Typing Game
+# C++ Word Typing Game
 A console-based application designed to help users improve their typing capabilities, speed, and accuracy. The game challenges players to type randomly generated words from a dictionary of nearly 3,000 words.
 
-#Game Features
+# Game Features
 
    - Massive Dictionary: Includes a library of 2,964 words ranging from simple common words to complex terms.
    - 10 Difficulty Modes: Ranges from "Beginner" to "Insane," plus a "Custom Mode" for specific training sessions.
@@ -15,7 +15,7 @@ A console-based application designed to help users improve their typing capabili
 
 
 
-#How to Play
+# How to Play
 1. Launch the Game: Run the compiled executable file.
 2. Select Difficulty: You will be prompted to select a difficulty level between 1 and 10.
 3. Type the number corresponding to your desired mode and press Enter.
@@ -32,10 +32,10 @@ A console-based application designed to help users improve their typing capabili
 
 
 
-#Difficulty Levels
+# Difficulty Levels
 The difficulty setting determines the duration of the session (how many words you must type).
 
-#Input    Mode Name         Word Count
+# Input    Mode Name         Word Count
  [1]   Beginner		    10 words 
  [2]   Easy		    20 words 
  [3]   Normal		    40 words 
