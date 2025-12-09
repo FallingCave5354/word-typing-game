@@ -1,5 +1,5 @@
 Developed by: Renz Andrei G. Comintan<br>
-<pre>			     Rayven D. Enriquez</pre><br>
+&nbsp;&nbsp;			     Rayven D. Enriquez<br>
 Submitted to: Daniel Villanueva
 
 # C++ Word Typing Game
