@@ -18,7 +18,7 @@ int main(){
            wrong_text = "   Your answer didn't match the word!\n";
 
     // Design template
-    string style_ln = "========================================\n\n",
+    string style_ln = "\n========================================\n\n",
            title_header = "\n\n========================================\n=====       Word Typing Game       =====\n========================================\n\n";
 
     // Will get the array size of words
@@ -36,15 +36,19 @@ int main(){
     }
     dictionary.close();
 
-    // Play again/Restart
-    char play_again, restart;
-    play_again:
+    // Documentation/Tutorial
+    cout << title_header;
+    cout << "Developed by: Renz Andrei G. Comintan\n"
+         << "              Rayven D. Enriquez\n\n"
+         << "Submitted to: Daniel Villanueva\n\n";
+    cout << style_ln;
+    Sleep(5000);
     system("cls");
-
-    // Tutorial
-    cout << "\nWord Typing Game: Improving the typing speed/capability of a user\n\n"
+    cout << "Word Typing Game\n\n"
+         << "A console-based application designed to help users improve their typing capabilities, speed, and accuracy.\n"
+         << "The game challenges players to type randomly generated words from a dictionary of nearly 3,000 words.\n\n"
          << "How to Play: \n\n"
-         << "1. Launch the Game: Run the compiled executable file.\n"
+         << "1. Launch the Game: Run the code by pressing F9.\n"
          << "2. Select Difficulty: You will be prompted to select a difficulty level between 1 and 10.\n"
          << "3. Type the number corresponding to your desired mode and press Enter.\n"
          << "4. Type the Words: A random word will appear on the screen (e.g., 1. Type \"abandon\").\n"
@@ -58,8 +62,28 @@ int main(){
 
     // Tutorial skip
     string tutorial_input;
-    cout << "\n\nPress any key to skip the tutorial!   "; cin >> tutorial_input;
+    cout << "\n\nEnter any key to continue!   "; cin >> tutorial_input;
     if (tutorial_input == "0"){}
+    system("cls");
+
+    // Loading screen
+    cout << title_header;
+    cout << "\n\n\n\tWelcome to Word Type Game";
+    cout << "\n\n\n\n\n" << style_ln;
+    Sleep(2000); system("cls");
+    for (int i = 1; i < 4; i++){
+        cout << title_header;
+        cout << "\n\n\n\tLoading";
+        for (int j = 0; j < i; j++){
+            cout << '.';
+        }
+        cout << "\n\n\n\n\n" << style_ln;
+        Sleep(2000); system("cls");
+    }
+
+    // Play again/Restart
+    char play_again, restart;
+    play_again:
     system("cls");
 
     // Header/Title
@@ -73,8 +97,13 @@ int main(){
     cout << "[4] Intermediate   [9] Insane\n";
     cout << "[5] Challenging    [10] Custom Mode\n\n";
     cout << style_ln;
+    // Difficulty selection
     cout << "Difficulty: ";
-    cin >> difficulty_choice; // Difficulty selection
+    if (!(cin >> difficulty_choice)){
+        cin.clear();
+        cin.ignore(1000, '\n');
+        difficulty_choice = -1;
+    }
     difficulty_choice--; // Convert the value to index value (start from 0)
 
     // Amount of words in a difficulty
@@ -91,8 +120,10 @@ int main(){
     int correct_words = 0, // Counter for correct answers/words that matched
         wrong_words = 0, // Counter for incorrect answers/words that didn't matched
         numbering = 0; // Counts on what number you are
+
     double accuracy = 0.00, // Accuracy of the user
            custom_amount = 0.00; // Amount of words in Custom Mode
+
     const int percent = 100; // Percentage
 
     // If the user selected (1-9)
@@ -190,10 +221,9 @@ int main(){
     cout << "\n\tPlay again? Y/N\t";
     cin >> restart;
     cout << endl;
-    cout << style_ln;
     if (restart == 'Y' || restart == 'y'){
         goto play_again;
-    } else{}
+    }
 
     return 0;
 }
