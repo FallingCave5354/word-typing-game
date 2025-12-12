@@ -99,6 +99,7 @@ int main(){
     cout << style_ln;
     // Difficulty selection
     cout << "Difficulty: ";
+    // Fix stuck on a loop when entering other than integer
     if (!(cin >> difficulty_choice)){
         cin.clear();
         cin.ignore(1000, '\n');
